@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+venv/
+.env
+
+# Local data and generated artifacts
+data/
+birdclef/output/*
+!birdclef/output/.gitkeep
+birdclef/models/*
+!birdclef/models/.gitkeep
+!birdclef/models/birdclef_labels.json
+
+# Weights and large binaries
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.onnx
+
+# Temporary files
+*.log
+*.tmp
+*.zip
+*.bak

@@ -1,0 +1,57 @@
+[
+  {
+    "k": 1.0,
+    "auc": 0.45,
+    "f1_fixed": 0.9709,
+    "f1_cfar": 0.8786,
+    "fpr_fixed": 0.001,
+    "fpr_cfar": 0.0546,
+    "t_mean": 0.0522,
+    "fpr_sc_fixed": 0.0029,
+    "fpr_sc_cfar": 0.0257
+  },
+  {
+    "k": 1.5,
+    "auc": 0.45,
+    "f1_fixed": 0.9709,
+    "f1_cfar": 0.8786,
+    "fpr_fixed": 0.001,
+    "fpr_cfar": 0.042,
+    "t_mean": 0.0527,
+    "fpr_sc_fixed": 0.0029,
+    "fpr_sc_cfar": 0.0249
+  },
+  {
+    "k": 2.0,
+    "auc": 0.45,
+    "f1_fixed": 0.9709,
+    "f1_cfar": 0.8835,
+    "fpr_fixed": 0.001,
+    "fpr_cfar": 0.039,
+    "t_mean": 0.0532,
+    "fpr_sc_fixed": 0.0029,
+    "fpr_sc_cfar": 0.0243
+  },
+  {
+    "k": 2.5,
+    "auc": 0.45,
+    "f1_fixed": 0.9709,
+    "f1_cfar": 0.8883,
+    "fpr_fixed": 0.001,
+    "fpr_cfar": 0.0361,
+    "t_mean": 0.0537,
+    "fpr_sc_fixed": 0.0029,
+    "fpr_sc_cfar": 0.0236
+  },
+  {
+    "k": 3.0,
+    "auc": 0.45,
+    "f1_fixed": 0.9709,
+    "f1_cfar": 0.8932,
+    "fpr_fixed": 0.001,
+    "fpr_cfar": 0.0332,
+    "t_mean": 0.0542,
+    "fpr_sc_fixed": 0.0029,
+    "fpr_sc_cfar": 0.0229
+  }
+]
