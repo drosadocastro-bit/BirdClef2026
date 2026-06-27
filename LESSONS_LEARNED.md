@@ -34,6 +34,8 @@ Kaggle runtime limits, offline execution, CPU inference, and submission formatti
 
 The CFAR-style thresholding idea was valuable because BirdCLEF is not only a model problem. It is also a detection and ranking problem under shifting background conditions. Treating thresholding as part of the engineering problem was the right instinct.
 
+Even though the CFAR path did not produce the intended competitive outcome, it still deserves to be preserved as part of the project's intellectual record. It was a legitimate attempt to reduce noise sensitivity and improve decision behavior in a hard acoustic environment.
+
 ## What Worked
 
 - Reusing an existing audio stack accelerated progress.
@@ -50,6 +52,21 @@ Hard 5-second cuts risked missing calls at segment boundaries. Overlap-aware win
 ### Raw probability preservation mattered
 
 For ROC-AUC-driven evaluation, aggressive early thresholding can destroy ranking signal. Human-readable filtering and leaderboard scoring are not the same problem.
+
+### CFAR was a useful experiment, not wasted work
+
+The important distinction is that an experiment can fail operationally and still succeed as learning.
+
+What CFAR contributed:
+
+- it forced explicit thinking about background noise and adaptive detection
+- it exposed the difference between appealing signal-processing intuition and leaderboard-compatible scoring behavior
+- it created a concrete record of a nonstandard idea worth revisiting in a different formulation later
+
+What it did not do:
+
+- it did not become the clean competition advantage originally hoped for
+- it did not remove the need for better probability handling, overlap logic, and evaluation-aligned inference design
 
 ### Class imbalance could not be treated as an afterthought
 
@@ -74,6 +91,7 @@ Rare species matter disproportionately in macro-style evaluation settings. Loss 
 - the migration pattern from one domain-specific audio problem to another
 - the split between training, inference, and evaluation utilities
 - the threshold-sweep workflow
+- the willingness to test CFAR-style adaptive logic in bioacoustic detection, even if the first attempt was imperfect
 - the discipline of writing down corrective backlog items while still in-flight
 
 ## Bottom Line

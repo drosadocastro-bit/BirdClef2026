@@ -22,6 +22,21 @@ Core goals:
 - preserve a fast iteration path for model and threshold experiments
 - explore CFAR-inspired adaptive thresholding as a signal-processing idea applied to bioacoustics
 
+## Why The CFAR Work Stays In The Archive
+
+Yes, the CFAR work belongs here.
+
+It is worth preserving even though it did not work out as intended in the competition setting, because it captures a real engineering idea: borrowing adaptive thresholding logic from radar and signal-processing workflows for noisy bird-species detection.
+
+That matters for the record because it shows:
+
+- what hypothesis was being tested
+- why classic ML thresholding felt insufficient
+- how noise-reduction and detection logic were being reconsidered
+- what kind of cross-domain thinking shaped the competition strategy
+
+An archive should preserve both successful components and serious failed or partial experiments, as long as they were technically meaningful. CFAR was technically meaningful.
+
 ## Why The Design Looks Like This
 
 The project architecture reflects several practical constraints:
@@ -47,6 +62,8 @@ Top-level items worth reading first:
 - `birdclef/` — main module source code
 - `birdclef/README.md` — original project README from the competition effort
 - `birdclef_colab_cfar.ipynb` — Colab-oriented workflow notebook
+- `PROJECT_STATUS.md` — concise status of what worked, what did not, and what remained experimental
+- `TIMELINE.md` — short historical sequence of how the effort evolved
 - `k_sweep_results.json` — threshold sweep artifact kept for historical context
 - `k_sweep_figure.png` — visualization artifact kept for historical context
 - `birdclef_todo.py` — backlog and corrective notes from the original effort
